@@ -48,7 +48,7 @@ if [[ ("${target_platform}" == "win-64" && "${build_platform}" == "linux-64") ]]
   # we need to add the generate-import-lib feature since otherwise
   # maturin will expect libpython DSOs at PYO3_CROSS_LIB_DIR
   # which we don't have since we are not able to add python as a host dependency
-  cargo feature pyo3 +generate-import-lib --manifest-path py-polars/Cargo.toml
+  cargo feature pyo3 +generate-import-lib --manifest-path Cargo.toml
 
   # cc-rs hardcodes ml64.exe as the MASM assembler for x86_64-pc-windows-msvc
   # We want to use LLVM's MASM assembler instead

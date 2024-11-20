@@ -30,6 +30,7 @@ requirements:
     - make                                # [unix]
     - cargo-feature                       # [build_platform != target_platform and target_platform == "win-64"]
     - cargo-bundle-licenses
+    - curl
   host:
     - python
     - pip
