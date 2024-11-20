@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  - url: https://github.com/pola-rs/polars/archive/2879a2d5b9286ca6624b179283e49d35349b9b60.tar.gz
-    sha256: c48eb8b6bb31b717ec1bb22bf29b43d49d927bf50f893888a8547979cafd9830
+  - url: https://github.com/pola-rs/polars/archive/ec37a269393d5cebed53d8d1a461f5e8daf6f55e.tar.gz
+    sha256: 74da3c66623fc6a167a717f5ba346e15d3d68784634b712c23e1969ab731b992
 
 build:
   number: 1
