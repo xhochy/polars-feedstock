@@ -2,6 +2,8 @@
 
 set -ex
 
+pushd py-polars
+
 case "${target_platform}" in
   linux-aarch64|osx-arm64)
     arch="aarch64"
@@ -11,7 +13,7 @@ case "${target_platform}" in
     ;;
 esac
 
-cpu_check_module="py-polars/polars/_cpu_check.py"
+cpu_check_module="polars/_cpu_check.py"
 features=""
 
 if [[ ${arch} == "x86_64" ]]; then
